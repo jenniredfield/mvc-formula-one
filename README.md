@@ -32,12 +32,6 @@ Once the process is complete you will see the log line 'db seeded!' and the node
 
 ### Routes
 
-You will need to make routes (specified below) and apply controller functions to each of those routes. Your controllers will need to use the provided models. You should also read the models carefully to get familiar with the relationships between data.
-
-The folder structure has been created for you to give you some clues on how to structure your project. 
-
-**NOTE** After you have got all of the controllers working (i.e. getting all the correct data), you will need to start implementing views with EJS. BUT! The key thing is you get all of your controllers done first before you try and implement EJS.
-
 #### Seasons
 
 **Get all the seasons**
@@ -99,28 +93,3 @@ The folder structure has been created for you to give you some clues on how to s
 ```
 /circuits/:circuit_id
 ```
-
-
-### Views
-
-**ONCE YOU HAVE COMPLETED ALL OF THE CONTROLLERS**
-
-We are going to build views to display our Formula one data using [EJS (Embedded JavaScript)](http://www.embeddedjs.com/)
-There is more EJS reading and a great tutorial on [scotch.io](https://scotch.io/tutorials/use-ejs-to-template-your-node-application)
-
-EJS has been around for a long time. Its first commit on GitHub was over six years ago. It has almost 1.5 million downloads per month
-from [npm](https://www.npmjs.com/package/ejs) and is widely used to create [MVC (Model-View-Controller)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
-application with JavaScript and express.
-
-#### Static assets.
-
-The public directory includes picturwes for every driver, team and various circuit images. The public directory also has
-Bootstrap CSS, Bootstrap.js, jQuery and Popper.js (both dependencies of Bootstrap.js)
-
-There are many resources for the bootstrap framework so you should easily make a great looking responsive website!
-
-As always the best place to start is the official [Bootstrap Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/) (use the latest version, 4)
-
-Using pen and paper, plan with your pair what views you'd like to implement before writing any code. Whenever you're building something visual it's always a good idea to have a clear picture of what you're trying to do.
-
-Tip: you might want to extract the Bootstrap dependencies (CSS and JavaScript) into EJS partials since they need to be present in every view.
