@@ -1,0 +1,28 @@
+{
+  "name": "wk06sprint_02_f1",
+  "version": "1.0.0",
+  "description": "Northcoders Formula One Sprint",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha spec/",
+    "seed-dev": "node seeds/seed.dev.js",
+    "lint": "eslint .",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "Northcoders",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongoose": "^4.5.8",
+    "supertest": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "cross-env": "^7.0.0",
+    "eslint": "^4.13.1",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.13.3"
+  }
+}
