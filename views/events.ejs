@@ -9,40 +9,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/events.css">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
-
 </head>
 <body>
 
-      <!-- The video -->
-      <div class="video-background">
-          <div class="video-foreground">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/DufyzQvPjvI?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=DufyzQvPjvI" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
+  <!-- The video -->
+  <div class="video-background">
+    <div class="video-foreground">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/DufyzQvPjvI?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=DufyzQvPjvI"
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="text-header">
+    <h1>Even<span class="red">ts</span></h1>
+    <div class="container">
+      <ul>
+        <%  season.sort(); season.forEach((season, i) => {%>
 
-        <div class="text-header">
-          <h1>Even<span class="red">ts</span></h1>
-
-          <div class="container">
-              <ul>
-                <%  season.sort(); season.forEach((season, i) => {%>
-
-                        <a href="./seasons/<%=season.season%>/events"><li><%= season.season %></li></a>
-
-                    <%
-                }) %>
-            </ul>
-            </div>
-          
-          <div class="links">
-              <a href='/'><i class="fa fa-3x fa-home" aria-hidden="true" title="Home"></i></a>
-          </div>
-
-        </div>
-
-   
-
-      
+        <a href="./seasons/<%=season.season%>/events">
+          <li><%= season.season %></li>
+        </a>
+        <% }) %>
+      </ul>
+    </div>
+    <div class="links">
+      <a href='/'><i class="fa fa-3x fa-home" aria-hidden="true" title="Home"></i></a>
+    </div>
+  </div>
   <script src="/js/jquery.min.js"></script>
   <script src="/js/popper.js"></script>
   <script src="/js/bootstrap.min.js"></script>
