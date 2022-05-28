@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Formula One</title>
-  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <script src="/js/myscript.js"></script>
-</head>
-<body>
+<%- include('./partials/head.ejs', { cssFile: '/css/main.css' }) -%>
+
   <!-- The video -->
-  <div class="video-background">
-    <div class="video-foreground">
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/DufyzQvPjvI?controls=0&showinfo=0&rel=0&mute=1&autoplay=1&loop=1&playlist=DufyzQvPjvI"
-        frameborder="0" allowfullscreen volume="0" class="video"></iframe>
-    </div>
-  </div>
+  <%- include('./partials/video.ejs') -%>
+
   <div class="text-header">
     <div class="main-title">
       <h1>Formula <span class="red">One</span></h1>
@@ -35,7 +18,7 @@
   <div class="footer">
     <div class="container text-center fixed-bottom">
       <footer>
-        <div class"footer-links">
+        <div>
           <a href="https://github.com/MtlJ1991"><i class="fa fa-3x fa-github fa-1x row-xs 2 git-icon"
               aria-hidden="true"></i></a>
           <a href="https://github.com/jenniredfield"><i class="fa fa-3x fa-github fa-1x row-xs 2 git-icon"
@@ -45,8 +28,5 @@
       </footer>
     </div>
   </div>
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/popper.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-</body>
-</html>
+  
+<%- include('./partials/footerTags.ejs') -%>

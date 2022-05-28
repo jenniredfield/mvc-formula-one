@@ -8,14 +8,14 @@
     "seed-dev": "node seeds/seed.dev.js",
     "lint": "eslint .",
     "dev": "cross-env NODE_ENV=development nodemon server.js",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "Northcoders",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.16.2",
-    "mongoose": "^4.5.8",
+    "mongoose": "^6.3.4",
     "supertest": "^3.0.0"
   },
   "devDependencies": {

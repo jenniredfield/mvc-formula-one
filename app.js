@@ -6,11 +6,13 @@ mongoose.Promise = Promise;
 
 const isDev = process.env.NODE_ENV !== 'production';
 
-const DB_URL= isDev ? require('./config').DB_URL : require('./config').DB_URL_PROD;
+const DB_URL = isDev
+  ? require('./config').DB_URL
+  : require('./config').DB_URL_PROD;
 
-mongoose.connect(DB_URL, {useMongoClient: true}, (err) => {
-  if (err) return console.error(err);               // eslint-disable-line no-console
-  console.log(`Connected to database ${DB_URL}`);   // eslint-disable-line no-console
+mongoose.connect(DB_URL, (err) => {
+  if (err) return console.error(err); // eslint-disable-line no-console
+  console.log(`Connected to database ${DB_URL}`); // eslint-disable-line no-console
 });
 
 app.use(express.static(__dirname + '/public'));
