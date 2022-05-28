@@ -13,7 +13,7 @@
   "author": "Northcoders",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^2.5.7",
+    "ejs": "^3.1.7",
     "express": "^4.16.2",
     "mongoose": "^6.3.4",
     "supertest": "^3.0.0"
